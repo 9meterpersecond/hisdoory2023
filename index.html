@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Door</title>
+	<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css" />
+	<script src="margin_slider.js"></script>
+	<script src="scale_slider.js"></script>
+</head>
+<body>
+	<div id="top">
+		<div id="title">
+			<p id="Pretendard" style="font-size: 60px; padding-left: 100px; font-weight: 700;">
+				방문 기록
+			</p>
+			<p id="SchibstedGrotesk" style="font-size: 60px; padding-left: 100px;">
+				Hisdoory
+			</p>
+		</div>
+		
+		<div id="rotateimg">
+			<img src="square/Asheville, North Carolina.PNG" alt="">
+			<img src="square/Biscay, Spain.PNG" alt="">
+			<img src="square/Córdoba, Argentina.PNG" alt="">
+			<img src="square/Los Angeles, California2.PNG" alt="">
+			<img src="square/Detroit, Michigan.PNG" alt="">
+			<img src="square/Guanajuato, Mexico.PNG" alt="">
+			<img src="square/Dingle, County Kerry, Ireland.PNG" alt="">
+			<img src="square/Basel, Switzerland.PNG" alt="">
+			<img src="square/Cascais, Portugal.PNG" alt="">
+			<img src="square/Finistere, France.PNG" alt="">
+			<img src="square/italy,burano.PNG" alt="">
+			<img src="square/Fayetteville, North Carolina.PNG" alt="">
+			<img src="square/Lower Saxony, Germany.PNG" alt="">
+			<img src="square/Japan,Uenotosho.PNG" alt="">
+			<img src="square/Jericho, Oxfordshire, England.PNG" alt="">
+			<img src="square/Japan,Shibuya.PNG" alt="">
+			<img src="square/London, England.PNG" alt="">
+			<img src="square/Lyme Regis, Dorset, England.PNG" alt="">
+			<img src="square/Korea,Yongin.PNG" alt="">
+			<img src="square/Lower Saxony, Germany3.PNG" alt="">
+			<img src="square/Nashville, Tennessee.PNG" alt="">
+			<img src="square/Quebec, Canada2.PNG" alt="">
+			<img src="square/Tacoma, Washington.PNG" alt="">
+			<img src="square/unknown4.PNG" alt="">
+			<img src="square/London, England4.PNG" alt="">
+			<img src="square/Neworleans,United_state.PNG" alt="">
+		</div>
+
+		<div id="menu">
+			<a id="doorbtn" href="#" onclick="gotosection('Doors_section'); return false;">
+				Doors
+			</a>
+			<a id="videobtn" href="#" onclick="gotosection('Video_section'); return false;">
+				Video
+			</a>
+			<a id="aboutbtn" href="#" onclick="gotosection('About_section'); return false"	>
+				About
+			</a>
+		</div>
+	</div>
+	<hr id="hr1">
+	
+	<div id="Doors_section">Doors</div>
+	<div id="scale_slider">
+		<input type="range" min="1" max="5" id="ex-in2">
+	</div>
+	<div id="margin_slider">
+		<input type="range" min="1" max="5" id="ex-in">
+	</div>
+	<div>
+		<button id="allbtn" style="margin-top: 20px;" onclick="filterImages('all')">All</button>
+		<button id="whitebtn" onclick="filterImages('white')">White</button>
+		<button id="blackbtn" onclick="filterImages('black')">Black</button>
+		<button id="redbtn" onclick="filterImages('red')">Red</button>
+		<button id="greenbtn" onclick="filterImages('green')">Green</button>
+		<button id="bluebtn" onclick="filterImages('blue')">Blue</button>
+		<button id="woodbtn" onclick="filterImages('yellow')">Yellow</button>
+	</div>
+
+	<!-- 문 설명 텍스트박스 -->
+	<div id="textbox"></div>
+		<div id="images">
+		<div id="image">
+			<img src="square/Aabenraa, Denmark.PNG" data-tag="all green wood" alt="">
+			<div id="image-text">Aabenraa, Denmark</div>
+		</div>
+		<div id="image">
+			<img src="square/Alberta, Canada.PNG" data-tag="all black iron" alt="">
+			<div id="image-text">Alberta, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Korea,Seoul_gyeongbokgung.PNG" data-tag="all white wood" alt="">
+			<div id="image-text">Seoul, Korea</div>
+		</div>
+		<div id="image">
+			<img src="square/Asheville, North Carolina.PNG" data-tag="all black" alt="">
+			<div id="image-text">Asheville, North Carolina</div>
+		</div>
+		<div id="image">
+			<img src="square/Alpes-Maritimes, France.PNG" data-tag="all red" alt="">
+			<div id="image-text">Alpes-Maritimes, France</div>
+		</div>
+		<div id="image">
+			<img src="square/Argentina,BuenosAires.PNG" data-tag="all blue" alt="">
+			<div id="image-text">BuenosAires, Argentina</div>
+		</div>
+		<div id="image">
+			<img src="square/Athens, Greece.PNG" data-tag="all red" alt="">
+			<div id="image-text">Athens, Greece </div>
+		</div>
+		<div id="image">
+			<img src="square/Baku, Azerbaijan.PNG" data-tag="all yellow wood" alt="">
+			<div id="image-text">Baku, Azerbaijan</div>
+		</div>
+		<div id="image">
+			<img src="square/Baltimore, Maryland.PNG" data-tag="all red" alt="">
+			<div id="image-text">Baltimore, Maryland</div>
+		</div>
+		<div id="image">
+			<img src="square/Barcelona, Spain.PNG" data-tag="all white" alt="">
+			<div id="image-text">Barcelona, Spain</div>
+		</div>
+		<div id="image">
+			<img src="square/Basel, Switzerland.PNG" data-tag="all red" alt="">
+			<div id="image-text">Basel, Switzerland</div>
+		</div>
+		<div id="image">
+			<img src="square/Belgrade, Serbia.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Belgrade, Serbia</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Benalmadena, Malaga, Spain.PNG" data-tag="all white" alt="">
+			<div id="image-text">Malaga, Spain</div>
+		</div>
+		<div id="image">
+			<img src="square/berlin,germany.PNG" data-tag="all blue" alt="">
+			<div id="image-text">berlin,germany</div>
+		</div>
+		<div id="image">
+			<img src="square/Bermondsey, London, England.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Bermondsey, London, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Biscay, Spain.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Biscay, Spain</div>
+		</div>
+		<div id="image">
+			<img src="square/Boa Vista, Cape Verde.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Boa Vista, Cape Verde</div>
+		</div>
+		<div id="image">
+			<img src="square/Bridgeport, Chicago, Illinois.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Bridgeport, Chicago, Illinois</div>
+		</div>
+		<div id="image">
+			<img src="square/Bridgetown, Barbados.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Bridgetown, Barbados</div>
+		</div>
+		<div id="image">
+			<img src="square/Bristol, England.PNG" data-tag="all white" alt="">
+			<div id="image-text">Bristol, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Bruges, West Flanders, Belgium.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Bruges, West Flanders, Belgium</div>
+		</div>
+		<div id="image">
+			<img src="square/Brussels, Belgium.PNG" data-tag="all white" alt="">
+			<div id="image-text">Brussels, Belgium</div>
+		</div>
+		<div id="image">
+			<img src="square/Campobasso, Italy.PNG" data-tag="all green" alt="">
+			<div id="image-text">Campobasso, Italy</div>
+		</div>
+		<div id="image">
+			<img src="square/Canada,Quebec.PNG" data-tag="all green" alt="">
+			<div id="image-text">Canada,Quebec</div>
+		</div>
+		<div id="image">
+			<img src="square/Canada,Quebec2.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Canada,Quebec</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Cascais, Portugal.PNG" data-tag="all white" alt="">
+			<div id="image-text">Cascais, Portugal</div>
+		</div>
+		<div id="image">
+			<img src="square/Charleston, South Carolina.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Charleston, South Carolina</div>
+		</div>
+		<div id="image">
+			<img src="square/Charleston, South Carolina2.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Charleston, South Carolina</div>
+		</div>
+		<div id="image">
+			<img src="square/Chulipuram, Sri Lanka.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Chulipuram, Sri Lanka</div>
+		</div>
+		<div id="image">
+			<img src="square/Cookham, Berkshire, England.PNG" data-tag="all red" alt="">
+			<div id="image-text">Cookham, Berkshire, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Copenhagen, Denmark.PNG" data-tag="all green" alt="">
+			<div id="image-text">Copenhagen, Denmark</div>
+		</div>
+		<div id="image">
+			<img src="square/Cotes-d'Armor, France.PNG" data-tag="all red" alt="">
+			<div id="image-text">Cotes-d'Armor, France</div>
+		</div>
+		<div id="image">
+			<img src="square/Cuba,Streetsofhavana.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Cuba,Streetsofhavana</div>
+		</div>
+		<div id="image">
+			<img src="square/Córdoba, Argentina.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Córdoba, Argentina</div>
+		</div>
+		<div id="image">
+			<img src="square/Detroit, Michigan.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Detroit, Michigan</div>
+		</div>
+		<div id="image">
+			<img src="square/Dingle, County Kerry, Ireland.PNG" data-tag="all green" alt="">
+			<div id="image-text">Dingle, County Kerry, Ireland</div>
+		</div>
+		<div id="image">
+			<img src="square/Dubai, United Arab Emirates.PNG" data-tag="all red" alt="">
+			<div id="image-text">Dubai, United Arab Emirates</div>
+		</div>
+		<div id="image">
+			<img src="square/East Sussex, England.PNG" data-tag="all green" alt="">
+			<div id="image-text">East Sussex, England</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Fayetteville, North Carolina.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Fayetteville, North Carolina</div>
+		</div>
+		<div id="image">
+			<img src="square/Finistere, France.PNG" data-tag="all red" alt="">
+			<div id="image-text">Finistere, France</div>
+		</div>
+		<div id="image">
+			<img src="square/French Quarter, New Orleans, Louisiana.PNG" data-tag="all blue" alt="">
+			<div id="image-text">French Quarter, New Orleans, Louisiana</div>
+		</div>
+		<div id="image">
+			<img src="square/Germany,Mecklenburg.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Germany,Mecklenburg</div>
+		</div>
+		<div id="image">
+			<img src="square/germany.jpg" data-tag="all yellow" alt="">
+			<div id="image-text">Germany</div>
+		</div>
+		<div id="image">
+			<img src="square/Gramercy Park, New York City, New York.PNG" data-tag="all white" alt="">
+			<div id="image-text">Gramercy Park, New York City, New York</div>
+		</div>
+		<div id="image">
+			<img src="square/Guanajuato, Mexico.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Guanajuato, Mexico</div>
+		</div>
+		<div id="image">
+			<img src="square/Hamburg, Germany.PNG" data-tag="all red" alt="">
+			<div id="image-text">Hamburg, Germany</div>
+		</div>
+		<div id="image">
+			<img src="square/Hamburg, Germany2.PNG" data-tag="all white" alt="">
+			<div id="image-text">Hamburg, Germany</div>
+		</div>
+		<div id="image">
+			<img src="square/Haut-Rhin, France.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Haut-Rhin, France</div>
+		</div>
+		<div id="image">
+			<img src="square/Havre de Grace, Maryland.PNG" data-tag="all red" alt="">
+			<div id="image-text">Havre de Grace, Maryland</div>
+		</div>
+		<div id="image">
+			<img src="square/italy,burano.PNG" data-tag="all blue" alt="">
+			<div id="image-text">italy,burano</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Jalisco, Mexico.PNG" data-tag="all green" alt="">
+			<div id="image-text">Jalisco, Mexico</div>
+		</div>
+		<div id="image">
+			<img src="square/Jalisco, Mexico2.PNG" data-tag="all black" alt="">
+			<div id="image-text">Jalisco, Mexico</div>
+		</div>
+		<div id="image">
+			<img src="square/Japan,Shibuya.PNG" data-tag="all white" alt="">
+			<div id="image-text">Japan,Shibuya</div>
+		</div>
+		<div id="image">
+			<img src="square/Japan,Tokyo.PNG" data-tag="all white" alt="">
+			<div id="image-text">Japan,Tokyo</div>
+		</div>
+		<div id="image">
+			<img src="square/Japan,Tokyo2.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Japan,Tokyo</div>
+		</div>
+		<div id="image">
+			<img src="square/Japan,Uenotosho.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Japan,Uenotosho</div>
+		</div>
+		<div id="image">
+			<img src="square/Jericho, Oxfordshire, England.PNG" data-tag="all red" alt="">
+			<div id="image-text">Jericho, Oxfordshire, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Kimolos, Greece.PNG" data-tag="all green" alt="">
+			<div id="image-text">Kimolos, Greece</div>
+		</div>
+		<div id="image">
+			<img src="square/Korea,classroom.PNG" data-tag="all green" alt="">
+			<div id="image-text">Korea classroom</div>
+		</div>
+		<div id="image">
+			<img src="square/Korea,Yongin.PNG" data-tag="all white" alt="">
+			<div id="image-text">Yongin, Korea</div>
+		</div>
+		<div id="image">
+			<img src="square/Kyoto, Japan.PNG" data-tag="all red" alt="">
+			<div id="image-text">Kyoto, Japan</div>
+		</div>
+		<div id="image">
+			<img src="square/lle de Groix, France.PNG" data-tag="all blue" alt="">
+			<div id="image-text">lle de Groix, France</div>
+		</div>
+		<div id="image">
+			<img src="square/La Verne, California.PNG" data-tag="all red" alt="">
+			<div id="image-text">La Verne, California</div>
+		</div>
+		
+		<div id="image">
+			<img src="square/Lancaster, Pennsylvania.PNG" data-tag="all red" alt="">
+			<div id="image-text">Lancaster, Pennsylvania</div>
+		</div>
+		<div id="image">
+			<img src="square/Lefkada, Greece.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Lefkada, Greece</div>
+		</div>
+		<div id="image">
+			<img src="square/Leiria, Portugal.PNG" data-tag="all black" alt="">
+			<div id="image-text">Leiria, Portugal</div>
+		</div>
+		<div id="image">
+			<img src="square/Lesbos, Greece.PNG" data-tag="all green" alt="">
+			<div id="image-text">Lesbos, Greece</div>
+		</div>
+		<div id="image">
+			<img src="square/Lisbon, Portugal.PNG" data-tag="all red" alt="">
+			<div id="image-text">Lisbon, Portugal</div>
+		</div>
+		<div id="image">
+			<img src="square/London, England.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">London, England</div>
+		</div>
+		<div id="image">
+			<img src="square/London, England2.PNG" data-tag="all blue" alt="">
+			<div id="image-text">London, England</div>
+		</div>
+		<div id="image">
+			<img src="square/London, England3.PNG" data-tag="all white" alt="">
+			<div id="image-text">London, England</div>
+		</div>
+		<div id="image">
+			<img src="square/London, England4.PNG" data-tag="all blue" alt="">
+			<div id="image-text">London, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Los Angeles, California.PNG" data-tag="all red" alt="">
+			<div id="image-text">Los Angeles, California</div>
+		</div>
+		<div id="image">
+			<img src="square/Los Angeles, California2.PNG" data-tag="all red" alt="">
+			<div id="image-text">Los Angeles, California</div>
+		</div>
+		<div id="image">
+			<img src="square/Los Angeles, California3.PNG" data-tag="all black" alt="">
+			<div id="image-text">Los Angeles, California</div>
+		</div>
+		<div id="image">
+			<img src="square/Lower Saxony, Germany.PNG" data-tag="all red" alt="">
+			<div id="image-text">Lower Saxony, Germany</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Lower Saxony, Germany2.PNG" data-tag="all black" alt="">
+			<div id="image-text">Lower Saxony, Germany</div>
+		</div>
+		<div id="image">
+			<img src="square/Lower Saxony, Germany3.PNG" data-tag="all white" alt="">
+			<div id="image-text">Lower Saxony, Germany</div>
+		</div>
+		<div id="image">
+			<img src="square/Lyme Regis, Dorset, England.PNG" data-tag="all black" alt="">
+			<div id="image-text">Lyme Regis, Dorset, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Madeira, Portugal.PNG" data-tag="all red" alt="">
+			<div id="image-text">Madeira, Portugal</div>
+		</div>
+		<div id="image">
+			<img src="square/Malaysia,penang.PNG" data-tag="all red" alt="">
+			<div id="image-text">Malaysia, Penang</div>
+		</div>
+		<div id="image">
+			<img src="square/Malaysia,penang2.PNG" data-tag="all black" alt="">
+			<div id="image-text">Malaysia, Penang</div>
+		</div>
+		<div id="image">
+			<img src="square/Malaysia,penang3.PNG" data-tag="all black" alt="">
+			<div id="image-text">Malaysia, Penang</div>
+		</div>
+		<div id="image">
+			<img src="square/Manchester, England.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Manchester, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Marblehead, Massachusetts.PNG" data-tag="all red" alt="">
+			<div id="image-text">Marblehead, Massachusetts</div>
+		</div>
+		<div id="image">
+			<img src="square/Merida, Yucatan, Mexico.PNG" data-tag="all black" alt="">
+			<div id="image-text">Merida, Yucatan, Mexico</div>
+		</div>
+		<div id="image">
+			<img src="square/Merida, Yucatan, Mexico2.PNG" data-tag="all black" alt="">
+			<div id="image-text">Merida, Yucatan, Mexico</div>
+		</div>
+		<div id="image">
+			<img src="square/Mexico, Stevemiller.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Mexico, Stevemiller</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Milan, Italy.PNG" data-tag="all white" alt="">
+			<div id="image-text">Milan, Italy</div>
+		</div>
+		<div id="image">
+			<img src="square/Montevideo, Uruguay.PNG" data-tag="all green" alt="">
+			<div id="image-text">Montevideo, Uruguay</div>
+		</div>
+		<div id="image">
+			<img src="square/Munich, Germany.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Munich, Germany</div>
+		</div>
+		<div id="image">
+			<img src="square/netherlands.PNG" data-tag="all red" alt="">
+			<div id="image-text">Netherlands</div>
+		</div>
+		<div id="image">
+			<img src="square/Nashville, Tennessee.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Nashville, Tennessee</div>
+		</div>
+		<div id="image">
+			<img src="square/New England, United States.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">New England, United States</div>
+		</div>
+		<div id="image">
+			<img src="square/New Mexico.PNG" data-tag="all blue" alt="">
+			<div id="image-text">New Mexico</div>
+		</div>
+		<div id="image">
+			<img src="square/New York City, New York.PNG" data-tag="all green" alt="">
+			<div id="image-text">New York City, New York</div>
+		</div>
+		<div id="image">
+			<img src="square/New York, New York.PNG" data-tag="all black" alt="">
+			<div id="image-text">New York, New York</div>
+		</div>
+		<div id="image">
+			<img src="square/New York, United State5.PNG" data-tag="all black" alt="">
+			<div id="image-text">New York, United States</div>
+		</div>
+		<div id="image">
+			<img src="square/New York, United States.PNG" data-tag="all black" alt="">
+			<div id="image-text">New York, United States</div>
+		</div>
+		<div id="image">
+			<img src="square/Neworleans,United_state.PNG" data-tag="all black" alt="">
+			<div id="image-text">New Orleans, United States</div>
+		</div>
+
+
+		<div id="image">
+			<img src="square/Pyles, Karpathos, Greece.PNG" data-tag="all white" alt="">
+			<div id="image-text">Pyles, Karpathos, Greece</div>
+		</div>
+		<div id="image">
+			<img src="square/Pyrenees-Atlantiques, France.PNG" data-tag="all red" alt="">
+			<div id="image-text">Pyrenees-Atlantiques, France</div>
+		</div>
+		<div id="image">
+			<img src="square/Quebec, Canada.PNG" data-tag="all red" alt="">
+			<div id="image-text">Quebec, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Quebec, Canada2.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Quebec, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Quebec, Canada3.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Quebec, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Tacoma, Washington.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Tacoma, Washington</div>
+		</div>
+		<div id="image">
+			<img src="square/Taghazout, Morocco.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Taghazout, Morocco</div>
+		</div>
+		<div id="image">
+			<img src="square/Tallinn, Estonia.PNG" data-tag="all black" alt="">
+			<div id="image-text">Tallinn, Estonia</div>
+		</div>
+		<div id="image">
+			<img src="square/Toronto, Ontario, Canada2.PNG" data-tag="all blue" alt="">
+			<div id="image-text">Toronto, Ontario, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Toronto, Ontario, Canada.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Toronto, Ontario, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Toronto, Ontario, Canada3.PNG" data-tag="all white" alt="">
+			<div id="image-text">Toronto, Ontario, Canada</div>
+		</div>
+		<div id="image">
+			<img src="square/Totterdown, Bristol, England.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Totterdown, Bristol, England</div>
+		</div>
+		<div id="image">
+			<img src="square/Tozeur, Tunisia.PNG" data-tag="all yellow" alt="">
+			<div id="image-text">Tozeur, Tunisia</div>
+		</div>
+
+
+<div id="image">
+	<img src="square/Nova Scotia, Canada.PNG" data-tag="all white" alt="">
+	<div id="image-text">Nova Scotia, Canada</div>
+</div>
+<div id="image">
+	<img src="square/Oaxaca, Mexico.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Oaxaca, Mexico</div>
+</div>
+<div id="image">
+	<img src="square/Ontario, Canada.PNG" data-tag="all red" alt="">
+	<div id="image-text">Ontario, Canada</div>
+</div>
+<div id="image">
+	<img src="square/Oran, Algeria.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Oran, Algeria</div>
+</div>
+<div id="image">
+	<img src="square/prison.PNG" data-tag="all green" alt="">
+	<div id="image-text">Prison</div>
+</div>
+<div id="image">
+	<img src="square/Palatinate, Germany.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Palatinate, Germany</div>
+</div>
+<div id="image">
+	<img src="square/Piedmont, Italy.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Piedmont, Italy</div>
+</div>
+<div id="image">
+	<img src="square/Pilsen, Chicago, Illinois.PNG" data-tag="all red" alt="">
+	<div id="image-text">Pilsen, Chicago, Illinois</div>
+</div>
+<div id="image">
+	<img src="square/Point Pleasant Beach, New Jersey.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Point Pleasant Beach, New Jersey</div>
+</div>
+<div id="image">
+	<img src="square/Praia do Carvalhal, Portugal.PNG" data-tag="all white" alt="">
+	<div id="image-text">Praia do Carvalhal, Portugal</div>
+</div>
+<div id="image">
+	<img src="square/Preston, Lancashire, England.PNG" data-tag="all green" alt="">
+	<div id="image-text">Preston, Lancashire, England</div>
+</div>
+<div id="image">
+	<img src="square/Punta Arenas, Chile.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Punta Arenas, Chile</div>
+</div>
+
+
+<div id="image">
+	<img src="square/unknown.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown10.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown2.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown3.jpg" data-tag="all black" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown4.PNG" data-tag="all red" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown5.PNG" data-tag="all red" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown6.PNG" data-tag="all black" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown7.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown8.PNG" data-tag="all green" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/unknown9.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/us.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/UK,London.PNG" data-tag="all black" alt="">
+	<div id="image-text">UK, London</div>
+</div>
+
+
+<div id="image">
+	<img src="square/UnitedState, LA.PNG" data-tag="all whitebtn" alt="">
+	<div id="image-text">UnitedState, LA</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState,Manhattan.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Manhattan, UnitedState</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState,Memphis.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Memphis, Unitedstate</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState,Newyork.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Newyork, UnitedState</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState,Newyork2.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Newyork, UnitedState</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState,Newyork3.PNG" data-tag="all white" alt="">
+	<div id="image-text">Newyork, UnitedState</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState,Newyork4.PNG" data-tag="all blue" alt="">
+	<div id="image-text">Newyork, UnitedState</div>
+</div>
+<div id="image">
+	<img src="square/UnitedState.PNG" data-tag="all black" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/Val Bregaglia, Switzerland.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Val Bregaglia, Switzerland</div>
+</div>
+<div id="image">
+	<img src="square/Victoria, British Columbia, Canada.PNG" data-tag="all green" alt="">
+	<div id="image-text">British Columbia, Canada</div>
+</div>
+<div id="image">
+	<img src="square/Villa de Leyva - Colombia.PNG" data-tag="all blue" alt="">
+	<div id="image-text">illa de Leyva - Colombia</div>
+</div>
+<div id="image">
+	<img src="square/Vilnius, Lithuania.PNG" data-tag="all red" alt="">
+	<div id="image-text">Vilnius, Lithuania</div>
+</div>
+
+
+<div id="image">
+	<img src="square/Wallhausen, Rhineland-Palatinate, Germany.PNG" data-tag="all white" alt="">
+	<div id="image-text">Wallhausen, Germany</div>
+</div>
+<div id="image">
+	<img src="square/Williamsburg, New York.PNG" data-tag="all yellow" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image">
+	<img src="square/Yucatan, Mexico.PNG" data-tag="all red" alt="">
+	<div id="image-text">Unknown</div>
+</div>
+<div id="image"> 
+	<img src="square/London, 2England.png" data-tag="all green" alt="">
+	<div id="image-text">London, England</div>
+</div>
+	<div id="image"> 
+		<img src="square/Liege, Belgium.png" data-tag="all green" alt="">
+		<div id="image-text">Liege, Belgium</div>
+	</div>
+	<div id="image"> 
+		<img src="square/2Madeira, Portugal.png" data-tag="all red" alt="">
+		<div id="image-text">Medeira, Portugal</div>
+	</div>
+	<div id="image"> 
+		<img src="square/Risbon, Portugal.png" data-tag="all white" alt="">
+		<div id="image-text">Risbon, Portugal</div>
+	</div>
+	<div id="image"> 
+		<img src="square/Grosseto, Italy.png" data-tag="all green" alt="">
+		<div id="image-text">Grosseto, italy</div>
+	</div>
+	<div id="image"> 
+		<img src="square/Algarve, Portugal.png" data-tag="all white" alt="">
+		<div id="image-text">Algarve, Portugal</div>
+	</div>
+	<div id="image"> 
+		<img src="square/Austin, Texas.png" data-tag="all white" alt="">
+		<div id="image-text">Austin,Texas</div>
+	</div>
+	<div id="image"> 
+		<img src="square/Bodrum, Turkey.png" data-tag="all green" alt="">
+		<div id="image-text">Bodrum Turkey</div>
+	</div>
+	<div id="image"> 
+		<img src="square/Antioquia, Colimbia.png" data-tag="all white" alt="">
+		<div id="image-text">Antioquia, Colombia </div>
+	</div>
+</div>
+</div>
+
+<div id="Video_section">
+	<hr id="hr1">
+		<p>Video</p>
+		<div id=youtube>
+			<iframe width="1280px" height="720px" src="https://www.youtube.com/embed/WTlzjag5Z7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+	</div>
+	
+
+<div id="About_section">
+	<hr id="hr1">
+	<div>
+		<p style="align-items: center;">About</p>
+	</div>
+</div>
+
+<div id="about_background">
+	<div id="about_container">
+		<div  id="doorblock6">
+			<img src="image/doorblock6.png" alt="">
+		</div>
+		<div id="doorblock7">
+			<img src="image/doorblock7.png" alt="">
+		</div>
+		<div id="doorblock1">
+			<img src="image/doorblock1.png" alt="">
+		</div>
+		<div id="doorblock111">
+			<img src="image/doorblock111.png" alt="">
+		</div>
+		<div id="doorblock000">
+			<img src="image/doorblock000.png" alt="">
+		</div>
+	</div>
+</div>
+<div id="about_textcontainer">
+		<p id="about_title">Hisdoory</p>
+		<p id="about_text">
+			Hisdoory는 전 세계의 문들을 아카이브 한 웹사이트이다. 여러 개의 문들이 모여있는 것을 보면 문들을 하나하나 봤을 때와 완전히 다른 느낌을 받는다.
+			문이라는 물체는 생각할수록 다양한 범위에서의 생각과 질문을 준다. 하지만 문은 너무 익숙하고 흔한 물체이기 때문에 자세히 들여다보기 어렵다. 
+			그렇기 때문에 건물들의 변형과 문의 집합 등 우리가 아는 구조를 벗어났을 때 완전히 새로운 것을 보는 듯한 낯선 감각이 든다. Hisdoory 웹사이트는
+			각각의 문들의 형태, 문의 기능, 문이 내는 소리들, 문에 관련된 각자의 에피소드 등 다양한 생각을 할 수 있는 페이지로 기획하였다.
+		</p>
+	</div>
+
+
+
+
+<hr id="hr1">
+<footer id="footer">
+	<span id="footerspan">방문 기록 Hisdoory</span>
+	<span id="footerspan">Copyright 2023. Digital Publishing.</span>
+</footer>
+
+	<script src="index.js"></script>
+	<script src="textbox.js"></script>
+</body>
+</html>

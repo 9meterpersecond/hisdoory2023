@@ -1,0 +1,497 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css");
+
+#Pretendard{
+  font-family: 'Pretendard-variable', sans-serif; 
+}
+
+#SchibstedGrotesk{
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+#hr1{
+  border: none;
+  outline: 0.5px solid black;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#abouthr{
+  margin-top: -15px;
+  border: none;
+  outline: 0.5px solid rgb(135, 135, 135);
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+#titlesetup{
+  font-family: 'Pretendard-variable', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 8px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+#textsetup{
+  font-family: 'Pretendard-variable', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+
+
+#title {
+  margin-top: 40px;
+}
+
+#menu {
+  text-align: right;
+  margin-top: 20px;
+}
+
+
+#youtube iframe {
+  margin-top: 0;
+  margin-left: 6%;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+#Doors_section{
+  font-family:  'Schibsted Grotesk';
+  font-size: 40px; 
+  letter-spacing: -1.2px; 
+  text-align: center; 
+	margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+#doorbtn {
+  font-family: 'Schibsted Grotesk';
+  font-size: 60px; 
+  padding-right: 100px;
+  transition: transform 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+
+#doorbtn:hover {
+  color: red;
+}
+
+#videobtn{
+  display: flex;
+  font-family: 'Schibsted Grotesk';
+  font-size: 60px;
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+
+#videobtn:hover {
+  color: red;
+}
+
+#aboutbtn{
+  font-family: 'Schibsted Grotesk';
+  font-size: 60px; 
+  padding-right: 100px;
+  transition: transform 0.3s ease;
+  color: black;
+  text-decoration: none;
+}
+
+#aboutbtn:hover{
+  color: red;
+}
+
+#rotateimg{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100vh;
+  margin-right: 190px;
+}
+
+#rotateimg img{
+  pointer-events: none;
+  transform: translate(50%, 50%);
+  width: 100px;
+  height: 210px;
+  position: absolute;
+  left: 50%;
+    top: 50%;
+  z-index: 1;
+}
+
+
+#top p {
+  margin: 2px 0; 
+}
+
+#subtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#top{
+  display: flex;
+  justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+#images{
+    margin-top: 1%;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#images img {
+    transition: transform 0.3s ease, z-index 0s;
+    z-index: 1;
+  }
+  
+  #images img:hover {
+    transform: scale(1.12);
+    z-index: 2;
+    cursor: grabbing;
+  }
+  
+  #image {
+		margin: 0.5%;
+	}
+
+  #image img {
+    width: auto;
+    height: 230px;
+    margin: 0.5%;
+    transition: transform 0.3s ease;
+}
+
+#margin_slider {
+  margin-bottom: 0px;
+  margin-left: 7%;
+}
+#scale_slider {
+  margin-top: 12px;
+  margin-left: 7%;
+}
+  
+#ex-in2{
+  background: rgb(190, 192, 204);
+  border-radius: 8px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#ex-in{
+  background: rgb(190, 192, 204);
+  border-radius: 8px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#allbtn{
+  margin-left: 7.2%;
+}
+
+#whitebtn{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+  background-color: gainsboro;
+font-size: 20px;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#blackbtn{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+  background-color: gainsboro;
+font-size: 20px;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#allbtn{
+margin-bottom: 20px;
+background-color: gainsboro;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+outline: 1px solid black;
+color: black;
+border-radius: 20px;
+padding: 5px 25px;
+border: 1px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#redbtn{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+background-color: gainsboro;
+font-size: 20px;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#greenbtn{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+  background-color: gainsboro;
+font-size: 20px;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#bluebtn{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+  background-color: gainsboro;
+font-size: 20px;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px;
+  cursor: pointer;  
+  transition: background-color 0.3s ease;
+}
+
+#woodbtn{
+  font-family: Arial, Helvetica, sans-serif;
+  outline: 1px solid black;
+  background-color: gainsboro;
+font-size: 20px;
+  color: black;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#textbox {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  outline: solid black 1px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-sizing: content-box;
+  height: calc(auto);
+  display: none;
+  pointer-events: none;
+
+}
+
+#image-text{
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#allbtn:hover{
+  background: rgb(172, 174, 185);
+}
+#whitebtn:hover{
+  background: rgb(172, 174, 185);
+}
+#blackbtn:hover{
+  background: rgb(172, 174, 185);
+}
+#redbtn:hover{
+  background: rgb(172, 174, 185);
+}
+#greenbtn:hover{
+  background: rgb(172, 174, 185);
+}
+#bluebtn:hover{
+  background: rgb(172, 174, 185);
+}
+#woodbtn:hover{
+  background: rgb(172, 174, 185);
+}
+
+
+
+
+#Video_section{
+  background-color: gainsboro;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#Video_section p {
+  font-family:  'Schibsted Grotesk';
+  font-size: 40px; 
+  letter-spacing: -1.2px; 
+  text-align: center; 
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#About_section{
+  background-color: gainsboro;
+  font-family:  'Schibsted Grotesk';
+  font-size: 40px; 
+  letter-spacing: -1.2px; 
+  text-align: center; 
+  margin-bottom: 130px;
+}
+
+#about_background{
+  width: 100%;
+  height: 1370px;
+}
+
+#about_container{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#doorblock6{
+  position: absolute;
+  width: 500px;
+  height: auto;
+  margin-left: 6%;
+}
+
+#doorblock6 img{
+  width: 100%;
+  height: auto;
+}
+
+#doorblock7{
+  position: absolute;
+  left: 66%;
+  margin-top: 170px;
+  width: 400px;
+  height: auto;
+}
+
+#doorblock7 img{
+  width: 100%;
+  height: auto;
+}
+
+#doorblock1{
+  left: 47%;
+  margin-top: 680px;
+  position: absolute;
+  width: 100px;
+  height: auto;
+}
+
+#doorblock1 img{
+  width: 100%;
+  height: auto;
+}
+
+#doorblock000{
+  position: absolute;
+  margin-top: 760px;
+  left: 51.5%;
+  width: 600px;
+  height: auto;
+}
+
+#doorblock000 img{
+  width: 100%;
+  height: auto;
+}
+
+#doorblock111{
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 760px;
+  width: 600px;
+  height: auto;
+}
+
+#doorblock111 img{
+  width: 100%;
+  height: auto;
+}
+
+#about_textcontainer{
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 1240px;
+}
+#about_title{
+  margin-top: 0px;
+  margin-bottom: 17px;
+  font-family: 'Pretendard-variable', sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+#about_text{
+  margin-top: 0px;
+  margin-bottom: 60px;
+  font-family: 'Pretendard-variable', sans-serif;
+  font-weight: normal;
+  font-size: 15.5px;
+  line-height: 33px;
+}
+
+#footer {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
+	height: 70px;
+	bottom: 0px;
+  font-size: 13px;
+}
+
+#footerspan{
+  color: rgb(91, 91, 91);
+  margin-left: 20px;
+}
